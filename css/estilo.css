@@ -1,0 +1,305 @@
+/*Formatação Geral */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet", Helvetica, sans-serif;
+	background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+/* Formatação do topo */
+
+#topo {
+	height: 150px;
+	background: url(imagens/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+	
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(imagens/logo.png) no-repeat center;
+	text-indent: -3000px; /*utilizado para caso não seja carregado o css*/
+}
+
+/* Barra de navegação */
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#topo ul {
+	background: #b10333;
+	margin-top: 20px;
+	float: left;
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.4em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #FFF;
+	background: url(imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+	background: none;
+}
+
+
+#topo ul a:hover {
+	color: #69001d;
+}
+
+body.home #menu a#home,
+body.brasil #menu a#brasil,
+body.internacional #menu a#internacional,
+body.economia #menu a#economia,
+body.saude #menu a#saude,
+body.ciencia #menu a#ciencia,
+body.fotos #menu a#fotos {
+	color: #FFF;
+	background: #de003e;
+	cursor: text;
+}
+
+
+
+/* Formatação do conteúdo */ 
+
+#conteudo {
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+.caixa {
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url(imagens/fundo-caixa.png);
+}
+
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#conteudo-primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+h2 {
+	font-size: 1.1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+#tres-colunas #conteudo-primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#duas-colunas #conteudo-primario {
+	width: 555px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#uma-coluna #conteudo-primario {
+	width: 750px;
+	float: left;
+	margin: 0 0 20px 0;
+}
+
+#conteudo-secundario {
+	float: left;
+	width: 270px;
+	margin: 0 0 20px 15px;
+}
+
+/*Formatação das imagens */
+
+img.imagem-principal {
+	border: 3px solid #dfdfdf;
+	width: 98%;
+}
+
+/*Formatação do cabeçalho */
+
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+}
+
+.entrevista h3 {
+	background: #b10333;
+	color: #000;
+}
+
+/* Formatação da lista de notícias */
+
+#lista-mundo li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-mundo li a {
+	text-decoration: none;
+}
+
+#lista-mundo li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-mundo li p {
+	color: #000;
+	font-size: 0.7em;
+}
+
+#lista-mundo li img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-mundo li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li p {
+	color: #000;
+	font-size: 0.7em;
+}
+
+#lista-noticias li img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+
+/*conteúdo lateral*/
+
+#conteudo-lateral {
+	float: left;
+	width: 180px;
+	margin: 0 0 20px -750px;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input {
+	font-size: 0.9em;
+	background-color: #fff;
+	padding: 5px;
+	width: 125px;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+h6 {
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#conteudo #conteudo-lateral li {
+	list-style-type: none;
+	padding-top: 25px;
+}
+
+#conteudo #conteudo-lateral li a {
+	list-style: none;
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#conteudo #conteudo-lateral li a:hover {
+	background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+
+}
+
+#conteudo-lateral .caixa-conteudo ul {
+	background: #fff;
+}
+
+/*conteúdo do rodapé*/
+
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+
+
+
